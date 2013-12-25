@@ -16,12 +16,6 @@
 	     url('../fonts/entypo/entypo.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
-@media screen and min-width(500px) {
-	.content p {
-		font-size: 1.5em;
-	}
-}
-
 html, body {
 	height: 100%;
 }
@@ -103,7 +97,7 @@ h5 {
 }
 
 .iconfont-github:hover {
-	color: #26292C;
+	color: #4CD964;
 }
 
 .iconfont-medium:before {
@@ -112,7 +106,7 @@ h5 {
 }
 
 .iconfont-medium:hover {
-	color: #F35756;
+	color: #FF3B30;
 }
 
 .iconfont-mail:before {
@@ -122,7 +116,16 @@ h5 {
 }
 
 .iconfont-mail:hover {
-	color: #000;
+	color: #8E8E93;
+}
+
+.iconfont-linkedin:before {
+	content: '\F318';
+	font-size: 1.5em;
+}
+
+.iconfont-linkedin:hover {
+	color: #4875B4;
 }
 
 .content {
@@ -153,15 +156,19 @@ h5 {
 }
 
 .content .red {
-	color: #F35756;
+	color: #FF3B30;
 }
 
 .content .orange {
-	color: #FFA300;
+	color: #FF9500;
 }
 
-.content .black {
-	color: #26292C;
+.content .blue {
+	color: #34AADC;
+}
+
+.content .green {
+	color: #4CD964;
 }
 
 .button-contact {
@@ -242,6 +249,7 @@ h5 {
 
 .contact {
 	width: 80%;
+	height: 100px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -257,7 +265,7 @@ h5 {
 
 .contact-buttons a {
 	text-decoration: none;
-	margin-right: 15%;
+	margin-right: 10%;
 }
 
 .contact-buttons .iconfont {
@@ -268,3 +276,30 @@ h5 {
 	margin-right: 0;
 }
 
+@media (min-width: 600px) {
+	.content p {
+		font-size: 1.5em;
+	}
+}
+
+@media (min-width: 800px) {
+	.content p {
+		font-size: 1.75em;
+	}
+
+	.content {
+		margin-bottom: 50px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.content p {
+		font-size: 2em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.content p {
+		font-size: 2.25em;
+	}
+}
