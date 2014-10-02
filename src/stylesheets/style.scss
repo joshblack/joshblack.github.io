@@ -62,11 +62,32 @@
     color: #FF9500;
 }
 
-.content .blue {
+.blue {
     color: #34AADC;
 }
 
 .content .green {
+    color: #4CD964;
+}
+
+.organization-link {
+    font-style: italic;
+    text-decoration: none;
+}
+
+.organization-link:hover {
+    text-decoration: underline;
+}
+
+.organization-link_blue {
+    color: #34AADC;
+}
+
+.organization-link_orange {
+    color: #FF9500;
+}
+
+.organization-link_green {
     color: #4CD964;
 }
 

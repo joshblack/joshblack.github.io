@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Test Page</title>
+    <meta charset="utf-8">
+    <title>UFHealth: Bridge - Josh Black</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/dist/stylesheets/dist.css">
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <header class="article-header">
+        <div class="article-info">
+            <h1 class="article-info_title">UFHealth: Bridge</h1>
+            <h5 class="article-info_subtitle">May 2014 - Current</h3>
+        </div>
+    </header>
+    <section class="article">
+        <section class="article-section">
+            <img src="https://d262ilb51hltx0.cloudfront.net/max/733/1*Vn2Ue10fPMzmOe5SG-PPwQ.png" alt="" class="article-image">
+            <h1 class="article-section_title">Introduction</h1>
+            <p class="article-section_text">
+                <a href="//bridge.ufhealth.org" class="organization-link organization-link_orange">Bridge</a> is the first major project that I was a part of while working for <a class="organization-link organization-link_blue" href="http://webservices.ufhealth.org" target="_blank">UFHealth</a>. As a product, <a href="//bridge.ufhealth.org" class="organization-link organization-link_orange">Bridge</a> is an intranet application used to serve over <em>23,000</em> users of the <a class="organization-link organization-link_blue" href="http://webservices.ufhealth.org" target="_blank">UFHealth</a> organization. It provides an entry point for users to perform a variety of tasks related to social aspects of the organization. This includes event management, leadership updates, and so much more. 
+            </p>
+
+            <p class="article-section_text">
+                As a Junior Web-Developer on a 10-member team, I was given a variety of tasks ranging from bug-squashing to building full-featured portions of the application. The diverse range of tasks given to me allowed me to become comfortable with many aspects of Web Development. As my exposure to the code base grew, my code contributions became cleaner, semantically correct, and followed standard code architecture practices.
+            </p>
+        </section>
+        <div class="section-divider"></div>
+        <section class="article-section">
+            <h1 class="article-section_title">Events Manager: Time Picker</h1>
+            <p class="article-section_text">
+                The <strong>Time Picker</strong> was one of the most complicated features that I've ever implemented. The need for this feature arose from user suggestions on how to modify the current time picker that was available at the time in <a href="//bridge.ufhealth.org" class="organization-link organization-link_orange">Bridge</a>.
+            </p>
+            <p class="article-section_text">As a team, we spotted the following pain points:</p>
+            <ul>
+                <li>It took a long time to choose a time</li>
+                <li>The interface was overall clunky and unintuitive</li>
+                <li>Users just did not like using it</li>
+            </ul>
+            <p class="article-section_text">After looking at these breakdowns, I decided to create an experience for the user that would make it as simple as possible to add a time to a given event. The method I ended up implementing allowed users to both use the existing drop down option that was present while also being allowed to type whatever time they wanted. The <em>JavaScript</em> behind the Time Picker would try and make a best guess about what the user wanted and give it to him or her as fast as possible.</p>
+            <h3>The Result:</h3>
+            <img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*Pbo3xiBNsHUcXZakSAEWfw.gif" alt="" class="article-image">
+        </section>
+        <div class="section-divider"></div>
+        <section class="article-section">
+            <h1 class="article-section_title">Calendar Feed</h1>
+            <p class="article-section_text">
+                The <strong>Calendar Feed</strong> was one of my first big tasks on <a href="//bridge.ufhealth.org" class="organization-link organization-link_orange">Bridge</a>. The requirements needed me to construct a calendar widget for the front page of the application and it needed to do the following:
+            </p>
+            <ul>
+                <li>Allow the users to see the current events for the day</li>
+                <li>Allow the users to see the events for the next and previous days, using AJAX</li>
+                <li>Allow the users to filter what events they saw based on certain criteria</li>
+                <li>Modify the state of old events in order to distinguish them from new events</li>
+            </ul>
+            <h3>The Results:</h3>
+            <img class="article-image" src="https://d262ilb51hltx0.cloudfront.net/max/800/1*_lp7vUtsbo4knDNZ3BmOQA.gif" alt="">
+            <p class="article-section_text">
+                
+            </p>
+        </section>
+        <div class="section-divider"></div>
+        <section class="article-section">
+            <h1 class="article-section_title">Conclusion</h1>
+            <p class="article-section_text">
+                Overall, working on the <a href="//bridge.ufhealth.org" class="organization-link organization-link_orange">Bridge</a> has been the most eye-opening experience for me as a developer. I loved being able to work alongside team members to build such an amazing project. Although it's still not fully launched, the current user base for the application is growing steadily (almost at <em>6,000</em> currently!) and it is expected to grow faster once an official announcement has been made.
+            </p>
+            <p class="article-section_text">
+                From this project I've picked up many skills in both front and back-end development. Since this project is built on a Wordpress core, I feel very comfortable both with plugin manipulation and with plugin creation. This project also fostered a strong understanding of UI/UX principles alongside their implementation details in both JavaScript and CSS.
+            </p>
+        </section>
+        <div class="section-divider"></div>
+    </section>
 </body>
 </html>

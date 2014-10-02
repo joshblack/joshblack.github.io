@@ -1,0 +1,4 @@
+.project-list .project-item:hover {
+    color: darken($subtitle-type-color, 20%);
+    transition: all 0.2s;
+}

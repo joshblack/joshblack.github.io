@@ -35,7 +35,7 @@ gulp.task('images', function() {
 
 gulp.task('watch', function() {
     gulp.watch('src/stylesheets/**/*.scss', ['styles']);
-    gulp.watch(['views/*.html', 'index.html'], ['reload']);
+    gulp.watch(['projects/*.html', 'index.html'], ['reload']);
 });
 
 gulp.task('default', ['styles', 'browser-sync', 'watch']);

@@ -6,11 +6,10 @@
 
 .hero-title {
     font-size: 1.5em;
-    color: #000;
 }
 
 .hero-title-secondary {
-    color: #b3b3b1;
+    color: $subtitle-type-color;
     font-size: 1em;
     font-weight: lighter;
     margin-bottom: 5px;
@@ -22,8 +21,8 @@
     border-radius: 100%;
     overflow: hidden;
     display: inline-block;
-    border: 3px solid #fff;
-    background-color: #fff;
+    border: 3px solid $white;
+    background-color: $white;
     box-shadow: 0 1px 1px rgba(0,0,0,0.3);
     margin-top: -40px;
 }

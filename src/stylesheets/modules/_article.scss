@@ -1,0 +1,33 @@
+.article {
+    width: 75%;
+    margin: auto;
+}
+
+.article-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.article-info_title {
+    margin: 0;
+    color: $white;
+}
+
+.article-info_subtitle {
+    color: $white;
+    font-weight: 300;
+}
+
+.section-divider {
+    width: 160px;
+    height: 1px;
+    background: $subtitle-type-color;
+    margin: 50px auto;
+}
+
+.article-image {
+    width: 100%;
+    margin: 25px auto;
+}

@@ -1,3 +1,4 @@
+@import "colors";
 @import "normalize";
 @import "fonts";
 @import "html5bp";
@@ -9,14 +10,20 @@ html, body {
 header {
     width: 100%;
     height: 150px;
-    background-color: #252525;
+    background-color: $header-color;
     border-bottom: 1px solid #454545;
 }
 
-h5 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
+    color: $base-type-color;
 }
 
-li {
-    font-family: 'Open Sans'
+p, li, a {
+    font-family: 'Open Sans';
+    color: $base-type-color;
+}
+
+.project-link:hover {
+    color: darken($subtitle-type-color, 20%);
 }
