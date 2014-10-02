@@ -15,3 +15,58 @@
          url('/dist/fonts/entypo/entypo.ttf')  format('truetype'), /* Safari, Android, iOS */
          url('/dist/fonts/entypo/entypo.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
+.iconfont {
+    position: relative;
+    top: 3px;
+    right: 5px;
+    font-family: 'entypo-social';
+    speak: none;
+    color: rgba(196, 196, 196, 0.77);
+}
+
+.iconfont-twitter:before {
+    content: '\F309';
+    font-size: 1.5em;
+}
+
+.iconfont-twitter:hover {
+    color: #55ACEE;
+}
+
+.iconfont-github:before {
+    content: '\F300';
+    font-size: 1.5em;
+}
+
+.iconfont-github:hover {
+    color: #4CD964;
+}
+
+.iconfont-medium:before {
+    content: '\F34B';
+    font-size: 1.5em;
+}
+
+.iconfont-medium:hover {
+    color: #FF3B30;
+}
+
+.iconfont-mail:before {
+    font-family: 'entypo';
+    content: '\2709';
+    font-size: 1.5em;
+}
+
+.iconfont-mail:hover {
+    color: #8E8E93;
+}
+
+.iconfont-linkedin:before {
+    content: '\F318';
+    font-size: 1.5em;
+}
+
+.iconfont-linkedin:hover {
+    color: #4875B4;
+}

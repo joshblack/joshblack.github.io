@@ -1,0 +1,28 @@
+.contact {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact .content-label {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.contact-buttons {
+    display: inline-block;
+    width: 100%;
+}
+
+.contact-buttons a {
+    text-decoration: none;
+    margin-right: 10%;
+}
+
+.contact-buttons .iconfont {
+    font-size: 2em;
+}
+
+.contact-buttons a:nth-last-child(1) {
+    margin-right: 0;
+}

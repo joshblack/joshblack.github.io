@@ -1,37 +1,5 @@
 @import "base";
-
-
-
-html, body {
-    height: 100%;
-}
-header {
-    width: 100%;
-    height: 150px;
-    background-color: #252525;
-    border-bottom: 1px solid #454545;
-}
-
-h5 {
-    font-family: 'Lato', sans-serif;
-}
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-::-moz-selection {
-    background: #E2E2E2;
-    text-shadow: none;
-}
-
-::selection {
-    background: #E2E2E2;
-    text-shadow: none;
-}
+@import "modules";
 
 #logo {
     width: 220px;
@@ -59,64 +27,9 @@ h5 {
     margin: 0;
 }
 
-.iconfont {
-    position: relative;
-    top: 3px;
-    right: 5px;
-    font-family: 'entypo-social';
-    speak: none;
-    color: rgba(196, 196, 196, 0.77);
-}
-
-.iconfont-twitter:before {
-    content: '\F309';
-    font-size: 1.5em;
-}
-
-.iconfont-twitter:hover {
-    color: #55ACEE;
-}
-
-.iconfont-github:before {
-    content: '\F300';
-    font-size: 1.5em;
-}
-
-.iconfont-github:hover {
-    color: #4CD964;
-}
-
-.iconfont-medium:before {
-    content: '\F34B';
-    font-size: 1.5em;
-}
-
-.iconfont-medium:hover {
-    color: #FF3B30;
-}
-
-.iconfont-mail:before {
-    font-family: 'entypo';
-    content: '\2709';
-    font-size: 1.5em;
-}
-
-.iconfont-mail:hover {
-    color: #8E8E93;
-}
-
-.iconfont-linkedin:before {
-    content: '\F318';
-    font-size: 1.5em;
-}
-
-.iconfont-linkedin:hover {
-    color: #4875B4;
-}
-
 .content {
     width: 80%;
-    margin: 15px auto 0 auto;
+    margin: 50px auto 0 auto;
     color: #666665;
 }
 
@@ -157,71 +70,6 @@ h5 {
     color: #4CD964;
 }
 
-.button-contact {
-    width: 80%;
-    border-top: 1px solid #E2E2E2;
-    text-align: center;
-    margin: 0 auto;
-    padding: 5px;
-}
-
-.button-contact a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.button-contact h4 {
-    vertical-align: middle;
-    width: 50%;
-    height: 30px;
-    margin: 0 auto;
-    background-color: #F35756;
-    line-height: 27px;
-}
-
-.hero {
-    font-family: 'Lato', sans-serif;
-    width: 100%;
-    text-align: center;
-}
-
-.hero-title {
-    font-size: 1.5em;
-    color: #000;
-}
-
-.hero-title-secondary {
-    color: #b3b3b1;
-    font-size: 1em;
-    font-weight: lighter;
-    margin-bottom: 5px;
-}
-
-.hero-avatar {
-    width: 100px;
-    height: 100px;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    overflow: hidden;
-    display: inline-block;
-    border: 3px solid #fff;
-    background-color: #fff;
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
-    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
-    margin-top: -40px;
-}
-
-.hero-avatar-image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-}
-
 .content-label {
     font-family: 'Lato', sans-serif;
     color: rgba(179, 179, 177, 0.71);
@@ -233,59 +81,38 @@ h5 {
     font-size: .8em;
 }
 
-.contact {
-    width: 80%;
-    height: 100px;
-    margin: 0 auto;
-    text-align: center;
-}
-.contact .content-label {
-    text-align: left;
-    margin-bottom: 0;
-}
-
-.contact-buttons {
-    display: inline-block;
-    width: 100%;
-}
-
-.contact-buttons a {
-    text-decoration: none;
-    margin-right: 10%;
-}
-
-.contact-buttons .iconfont {
-    font-size: 2em;
-}
-
-.contact-buttons a:nth-last-child(1) {
-    margin-right: 0;
-}
-
 @media (min-width: 600px) {
     .content p {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 
 @media (min-width: 800px) {
     .content p {
-        font-size: 1.75em;
+        font-size: 1.25em;
     }
 
-    .content {
+    .content, footer.contact {
         margin-bottom: 50px;
     }
 }
 
 @media (min-width: 1000px) {
     .content p {
-        font-size: 2em;
+        font-size: 1.25em;
+    }
+
+    .content, footer.contact {
+        width: 60%;
     }
 }
 
 @media (min-width: 1200px) {
     .content p {
-        font-size: 2.25em;
+        font-size: 1.5em;
+    }
+
+    .content, footer.contact {
+        width: 50%;
     }
 }
