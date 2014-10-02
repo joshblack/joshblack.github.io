@@ -1,4 +1,13 @@
-.project-list .project-item:hover {
+.project-item:hover a {
     color: darken($subtitle-type-color, 20%);
     transition: all 0.2s;
+}
+
+.project-item {
+    margin: 5px 0;
+}
+
+.project-item a {
+    color: #b3b3b1;
+    font-size: 18px;
 }
