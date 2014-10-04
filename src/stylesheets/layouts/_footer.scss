@@ -1,0 +1,12 @@
+.footer-personal {
+    background: $footer-color;
+    position: relative;
+    text-align: center;
+}
+
+.footer-personal_message {
+    display: inline-block;
+    margin: 50px auto;
+    color: $white;
+    font-weight: 300;
+}

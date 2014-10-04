@@ -11,10 +11,11 @@
 <body>
     <header class="article-header">
         <div class="article-info">
-            <h1 class="article-info_title">UFHealth: Bridge</h1>
-            <h5 class="article-info_subtitle">May 2014 - Current</h3>
+            <h1 class="article-info_title">UFHealth: Pulse</h1>
+            <h5 class="article-info_subtitle">May 2013 - February 2014</h3>
         </div>
     </header>
+    <img src="/dist/images/pulse-header.png" alt="" class="article-img_full">
     <section class="article">
         <section class="article-section">
             <h1 class="article-section_title">Introduction</h1>
@@ -25,6 +26,7 @@
         <div class="section-divider"></div>
         <section class="article-section">
             <h1 class="article-section_title">Laravel</h1>
+            <img src="/dist/images/pulse-laravel.png" alt="" class="article-img_half">
             <p class="article-section_text">
                 <a href="//social.ufhealth.org" class="organization-link organization-link_orange">Pulse</a> was built on the back-end using a PHP framework known as Laravel. Laravel is incredible and was just starting to emerge as a viable PHP framework when I started the project. Through it, I was able to learn about various web fundamentals such as:
             </p>
@@ -36,7 +38,7 @@
                 <li>Databases</li>
                 <li>Caching</li>
                 <li>Authentication</li>
-                <li>And so much more</li>
+                <li>And more</li>
             </ul>
             <p class="article-section_test">
                 Overall, Laravel is what bootstrapped my entire desire to learn more about web technologies and I'm extremely grateful that I was allowed to use it on my first project. After watching countless Jeffrey Way videos, I felt that I delivered a product that was worth talking about.
@@ -46,20 +48,42 @@
         <section class="article-section">
             <h1 class="article-section_title">Masonry</h1>
             <p class="article-section_text">
-                Masonry is a JavaScript visual framework that I used to present the front page of the application. When the Web Services team was drafting requirements for this project, one of the main features that they wanted was a responsive layout for the variety of sizes posts.
+                In order to build the tile look of <a href="//social.ufhealth.org" class="organization-link organization-link_orange">Pulse</a>, I used Masonry. Masonry is a JavaScript grid layout library that works by placing elements in optimal positions based on available vertical space. One of the initial layout problems present in early iterations of <a href="//social.ufhealth.org" class="organization-link organization-link_orange">Pulse</a> were that the sizes of posts from the variety of social channels were not uniform.
+            </p>
+            <p class="article-section_text">
+                As such, I needed to find a solution. Masonry filled that hole and allowed me to create a social experience for the UFHealth organization that has not beed done before.
             </p>
         </section>
         <div class="section-divider"></div>
         <section class="article-section">
             <h1 class="article-section_title">Using API's</h1>
-            <p class="article-section_text"></p>
+            <img src="/dist/images/pulse-api.png" alt="" class="article-img_half">
+            <p class="article-section_text">
+                The primary focus of the <a href="//social.ufhealth.org" class="organization-link organization-link_orange">Pulse</a> was to aggregrate the social content from a variety of social media channels for UF Health. Therefore I needed to deal with not just creating APIs unique to the Pulse, I also needed to learn and become familiar with the APIs of all major social media sources. This included:
+            </p>
+            <ul class="article-section_list">
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Pinterest (Still in beta)</li>
+                <li>YouTube</li>
+            </ul>
+            <p class="article-section_text">
+                After becoming familiar with how all these services worked, I implemented several PHP aggregation scripts that polled services for new content for all of the accounts registered with the <a href="//social.ufhealth.org" class="organization-link organization-link_orange">Pulse</a>.
+            </p>
         </section>
         <div class="section-divider"></div>
         <section class="article-section">
             <h1 class="article-section_title">Conclusion</h1>
-            <p class="article-section_text"></p>
+            <p class="article-section_text">
+                As my first web project, the <a href="//social.ufhealth.org" class="organization-link organization-link_orange">Pulse</a> was the beginning of my passion for web development. It taught me the fundamentals of how information is transferred and receieved on the web. It taught me the headaches experienced by developing for a seemingly endless supply of browser variations. 
+            </p>
+            <p class="article-section_text">But, above anything else, it taught me how much fun developing for the web can be.</p>
         </section>
         <div class="section-divider"></div>
     </section>
+    <footer class="footer-personal">
+        <h4 class="footer-personal_message">Do what you love.</h4>
+    </footer>
 </body>
 </html>
