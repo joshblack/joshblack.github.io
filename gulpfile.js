@@ -1,12 +1,13 @@
 'use strict';
 
 var gulp = require('gulp');
-var sass = require('gulp-ruby-sass');
+var sass = require('gulp-sass');
 var autoprefix = require('gulp-autoprefixer');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
+var cssmin = require('gulp-cssmin');
 
 gulp.task('browser-sync', function() {
     browserSync({
@@ -20,8 +21,9 @@ gulp.task('reload', function() {
 
 gulp.task('styles', function() {
     return gulp.src('src/stylesheets/**/*.scss')
-        .pipe(sass({ style: 'compressed' }))
+        .pipe(sass())
         .pipe(autoprefix('last 1 version'))
+        .pipe(cssmin())
         .pipe(rename('dist.css'))
         .pipe(gulp.dest('dist/stylesheets'))
         .pipe(reload({ stream: true }))
